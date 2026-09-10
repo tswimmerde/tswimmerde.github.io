@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>司马懿之死-三国人物结局与历史脉络解读</title>
+<meta name="description" content="司马懿之死专题：梳理司马懿去世的时间、背景、生平脉络与后世评价，解答司马懿怎么死的、死于何地、与诸葛亮及曹魏政局的关系等常见疑问。">
+<meta name="keywords" content="司马懿之死,司马懿,三国,曹魏,高平陵之变,诸葛亮,三国人物">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#1c1a17;
+    --ink-soft:#4a453d;
+    --paper:#f4efe4;
+    --paper-2:#e9e1d0;
+    --line:#cdc2a9;
+    --accent:#8c2f21;
+    --accent-2:#b8863b;
+    --jade:#3d5c4a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Songti SC","SimSun","Noto Serif SC",Georgia,serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.85;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px;}
+
+  /* 顶部 */
+  .topbar{
+    background:#241f1a;
+    color:#d9cfba;
+    font-size:13px;
+    letter-spacing:.05em;
+  }
+  .topbar .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    flex-wrap:wrap;gap:6px;padding-top:8px;padding-bottom:8px;
+  }
+  .topbar span{opacity:.85;}
+
+  header.site-head{
+    background:linear-gradient(180deg,#2c2620 0%,#3a3229 100%);
+    color:#f4efe4;
+    border-bottom:4px double var(--accent-2);
+  }
+  .head-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:24px;flex-wrap:wrap;
+    padding:26px 20px;
+    max-width:1140px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:14px;}
+  .brand .seal{
+    width:52px;height:52px;flex:0 0 52px;
+    background:var(--accent);
+    color:#f7f0e2;
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;font-weight:700;
+    border-radius:4px;
+    box-shadow:0 0 0 2px rgba(184,134,59,.55) inset;
+  }
+  .brand h1{font-size:22px;letter-spacing:.08em;line-height:1.3;}
+  .brand p{font-size:12.5px;color:#bdb098;letter-spacing:.16em;margin-top:2px;}
+
+  nav.main-nav ul{
+    list-style:none;display:flex;gap:6px;flex-wrap:wrap;
+  }
+  nav.main-nav a{
+    color:#e6dcc6;font-size:15px;padding:8px 14px;border-radius:3px;
+    display:block;letter-spacing:.06em;
+    border:1px solid transparent;
+  }
+  nav.main-nav a:hover{
+    background:rgba(184,134,59,.18);
+    border-color:rgba(184,134,59,.5);
+    text-decoration:none;
+  }
+
+  /* 首屏 */
+  .hero{
+    background:
+      radial-gradient(circle at 82% 18%,rgba(184,134,59,.22),transparent 58%),
+      linear-gradient(135deg,#3a3229 0%,#241f1a 100%);
+    color:#efe7d6;
+    padding:54px 0 46px;
+    border-bottom:1px solid #4d4235;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:start;
+  }
+  .hero h2{
+    font-size:32px;line-height:1.45;letter-spacing:.04em;
+    margin-bottom:18px;font-weight:700;
+  }
+  .hero h2 em{color:var(--accent-2);font-style:normal;}
+  .hero p{color:#cdc2ab;font-size:15.5px;margin-bottom:14px;}
+  .hero-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}
+  .hero-tags span{
+    font-size:13px;padding:4px 12px;border:1px solid rgba(184,134,59,.55);
+    border-radius:20px;color:#d8c9a8;
+  }
+  .fact-card{
+    background:rgba(244,239,228,.06);
+    border:1px solid rgba(184,134,59,.35);
+    border-radius:6px;
+    padding:22px 22px 18px;
+  }
+  .fact-card h3{
+    font-size:15px;letter-spacing:.18em;color:var(--accent-2);
+    margin-bottom:14px;font-weight:600;
+  }
+  .fact-card dl{font-size:14.5px;}
+  .fact-card dt{color:#a99a7e;font-size:13px;letter-spacing:.08em;}
+  .fact-card dd{color:#efe7d6;margin-bottom:12px;}
+  .fact-card dd:last-child{margin-bottom:0;}
+
+  /* 主体布局 */
+  main{padding:52px 0 20px;}
+  .layout{
+    display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:46px;
+    align-items:start;
+  }
+  section.block{margin-bottom:52px;}
+  .sec-title{
+    display:flex;align-items:baseline;gap:14px;
+    border-bottom:2px solid var(--line);
+    padding-bottom:10px;margin-bottom:24px;
+  }
+  .sec-title h2{
+    font-size:23px;letter-spacing:.06em;color:var(--ink);
+  }
+  .sec-title h2::before{
+    content:"◆";color:var(--accent);font-size:13px;
+    margin-right:10px;vertical-align:2px;
+  }
+  .sec-title span{font-size:13px;color:#8a7f6b;letter-spacing:.12em;}
+
+  .prose p{margin-bottom:16px;color:var(--ink-soft);text-align:justify;}
+  .prose p strong{color:var(--ink);}
+  .prose h3{
+    font-size:18px;margin:28px 0 12px;color:var(--ink);
+    padding-left:12px;border-left:4px solid var(--accent-2);
+  }
+
+  /* 时间线 */
+  .timeline{position:relative;padding-left:26px;}
+  .timeline::before{
+    content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--accent-2),var(--line));
+  }
+  .tl-item{position:relative;margin-bottom:24px;}
+  .tl-item::before{
+    content:"";position:absolute;left:-26px;top:9px;
+    width:11px;height:11px;border-radius:50%;
+    background:var(--paper);border:3px solid var(--accent);
+  }
+  .tl-item h3{font-size:16.5px;margin-bottom:6px;}
+  .tl-item h3 time{
+    font-size:13px;color:var(--accent);letter-spacing:.08em;
+    margin-right:10px;font-family:Georgia,serif;
+  }
+  .tl-item p{font-size:14.8px;color:var(--ink-soft);}
+
+  /* 卡片网格 */
+  .card-grid{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;
+  }
+  .card{
+    background:#fbf7ee;border:1px solid var(--line);border-radius:6px;
+    padding:20px 20px 18px;
+    transition:box-shadow .2s,transform .2s;
+  }
+  .card:hover{box-shadow:0 6px 18px rgba(60,48,30,.12);transform:translateY(-2px);}
+  .card h3{font-size:16.5px;margin-bottom:10px;color:var(--accent);}
+  .card p{font-size:14.3px;color:var(--ink-soft);}
+
+  /* 人物关系 */
+  .rel-list{list-style:none;}
+  .rel-list li{
+    display:grid;grid-template-columns:96px 1fr;gap:16px;
+    padding:14px 0;border-bottom:1px dashed var(--line);
+  }
+  .rel-list li:last-child{border-bottom:none;}
+  .rel-list b{
+    color:var(--accent);font-size:15px;font-weight:600;
+  }
+  .rel-list span{font-size:14.6px;color:var(--ink-soft);}
+
+  /* 常见问题 */
+  .faq details{
+    background:#fbf7ee;border:1px solid var(--line);border-radius:6px;
+    margin-bottom:12px;overflow:hidden;
+  }
+  .faq summary{
+    cursor:pointer;padding:15px 20px;font-size:16px;font-weight:600;
+    color:var(--ink);list-style:none;position:relative;
+  }
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{
+    content:"＋";position:absolute;right:20px;color:var(--accent);
+    font-size:17px;
+  }
+  .faq details[open] summary::after{content:"－";}
+  .faq details[open] summary{border-bottom:1px solid var(--line);}
+  .faq .ans{padding:16px 20px 18px;font-size:14.8px;color:var(--ink-soft);}
+
+  /* 侧栏 */
+  aside .widget{
+    background:#fbf7ee;border:1px solid var(--line);border-radius:6px;
+    padding:20px;margin-bottom:22px;
+  }
+  aside .widget h3{
+    font-size:15px;letter-spacing:.14em;color:var(--accent);
+    padding-bottom:10px;border-bottom:1px solid var(--line);
+    margin-bottom:14px;
+  }
+  aside .widget ul{list-style:none;}
+  aside .widget li{
+    font-size:14.4px;padding:9px 0;border-bottom:1px dashed var(--line);
+    color:var(--ink-soft);
+  }
+  aside .widget li:last-child{border-bottom:none;}
+  aside .widget li a{color:var(--ink-soft);}
+  aside .widget li a:hover{color:var(--accent);}
+  .quote-box{
+    background:linear-gradient(160deg,#3a3229,#241f1a);
+    color:#e6dcc6;border:none;
+  }
+  .quote-box h3{color:var(--accent-2);border-bottom-color:#4d4235;}
+  .quote-box p{font-size:14.6px;color:#cdc2ab;line-height:1.9;}
+  .quote-box cite{display:block;margin-top:10px;font-size:13px;color:#9c8f76;font-style:normal;}
+
+  /* 页脚 */
+  footer.site-foot{
+    background:#241f1a;color:#a99a7e;margin-top:30px;
+    border-top:4px double var(--accent-2);
+    padding:38px 0 26px;font-size:14px;
+  }
+  .foot-grid{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;
+    padding-bottom:26px;border-bottom:1px solid #3d3529;
+  }
+  .foot-grid h4{
+    color:#e6dcc6;font-size:15px;letter-spacing:.1em;margin-bottom:12px;
+  }
+  .foot-grid p{color:#8f836c;font-size:13.6px;line-height:1.9;}
+  .foot-grid ul{list-style:none;}
+  .foot-grid li{margin-bottom:8px;font-size:13.6px;}
+  .foot-grid a{color:#a99a7e;}
+  .foot-grid a:hover{color:var(--accent-2);}
+  .copyright{
+    text-align:center;padding-top:18px;font-size:13px;color:#7a6f5b;
+  }
+
+  @media (max-width:960px){
+    .layout{grid-template-columns:1fr;gap:34px;}
+    .hero-grid{grid-template-columns:1fr;gap:28px;}
+    .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:620px){
+    body{font-size:15.4px;}
+    .head-inner{padding:20px;flex-direction:column;align-items:flex-start;gap:16px;}
+    .hero{padding:38px 0 34px;}
+    .hero h2{font-size:24px;}
+    .card-grid{grid-template-columns:1fr;}
+    .rel-list li{grid-template-columns:1fr;gap:4px;}
+    .foot-grid{grid-template-columns:1fr;gap:24px;}
+    nav.main-nav a{padding:7px 11px;font-size:14px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>三国人物志 · 历史脉络整理</span>
+    <span>内容以史籍记载为依据，不作虚构演绎</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="head-inner">
+    <div class="brand">
+      <div class="seal">懿</div>
+      <div>
+        <h1>司马懿之死</h1>
+        <p>人物结局 · 生平脉络 · 后世评说</p>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#death">去世始末</a></li>
+        <li><a href="#life">生平脉络</a></li>
+        <li><a href="#relation">人物关系</a></li>
+        <li><a href="#view">后世评说</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h2>司马懿之死：一位<em>熬过三代君主</em>的谋臣，如何走完最后一段路</h2>
+      <p>司马懿（字仲达）是曹魏中后期最重要的军政人物之一。他历经曹操、曹丕、曹叡、曹芳数朝，晚年通过高平陵之变掌握朝政大权，并在权力巅峰期去世。关于他的死，人们最关心的往往是三件事：什么时候死的、怎么死的、以及他的死对当时的政局意味着什么。</p>
+      <p>本页围绕“司马懿之死”这一线索，把去世时间、临终前后的政局、生平关键节点与后世评价串联起来，帮助读者在有限篇幅内建立一条清晰的历史脉络，而不是停留在零散的传说与影视桥段上。</p>
+      <div class="hero-tags">
+        <span>曹魏</span>
+        <span>高平陵之变</span>
+        <span>三国后期</span>
+        <span>人物结局</span>
+        <span>历史评说</span>
+      </div>
+    </div>
+    <div class="fact-card">
+      <h3>速览要点</h3>
+      <dl>
+        <dt>人物</dt>
+        <dd>司马懿，字仲达，河内温县人</dd>
+        <dt>去世时间</dt>
+        <dd>曹魏嘉平三年（公元251年），年七十三</dd>
+        <dt>去世前后大事</dt>
+        <dd>此前两年发动高平陵之变，此后不久平定王凌之乱</dd>
+        <dt>身后安排</dt>
+        <dd>由其子司马师、司马昭相继执掌朝政，为西晋代魏奠定基础</dd>
+        <dt>常见说法辨析</dt>
+        <dd>史籍以病逝记载为主，具体病症并无明确结论</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap layout">
+
+    <div class="content">
+
+      <section class="block prose" id="death">
+        <div class="sec-title">
+          <h2>去世始末</h2>
+          <span>时间 · 背景 · 政局</span>
+        </div>
+        <p>按《晋书》等史籍的记载，司马懿于曹魏嘉平三年（公元251年）去世，享年七十三岁。这个年纪在三国时期已属高寿，而他的去世并非发生在闲居之中——恰恰相反，是在他晚年权力最集中的阶段。</p>
+
+        <h3>去世前两年的关键转折</h3>
+        <p>嘉平元年（公元249年），司马懿趁曹爽陪同皇帝曹芳出城祭扫高平陵之机，发动政变，控制洛阳，随后清除曹爽及其党羽。这一事件通常被称为<strong>高平陵之变</strong>，是曹魏政局的分水岭：此前司马懿是辅政大臣之一，此后他实际上成为朝政的主导者。</p>
+        <p>政变之后，朝中并非全然平静。嘉平三年，太尉王凌在淮南谋划另立新君、对抗司马氏，事泄失败。司马懿亲自率军前往处置，王凌随后自杀。这一事件的平定，进一步巩固了司马氏对朝局的控制，而司马懿本人也在同年去世。</p>
+
+        <h3>关于“怎么死的”</h3>
+        <p>史书对司马懿之死的记载较为简略，主要表述为病逝，并未留下明确的病症说明。因此，网络上流传的“被吓死”“被毒死”“因某人之死忧惧而亡”等说法，多属后世的推测、文学演绎或影视加工，缺乏可靠史料支撑。较为稳妥的理解是：<strong>司马懿是在高龄、且长期处理军政事务的背景下因病去世</strong>，具体病因史无明载。</p>
+
+        <h3>临终与身后</h3>
+        <p>司马懿去世后，其子司马师接掌权力，继续以录尚书事等身份控制朝政；司马师去世后，权力又转到司马昭手中。经过两代人的经营，魏国皇帝逐渐沦为象征，最终由司马炎完成代魏建晋。可以说，司马懿之死并不是司马氏势力的终点，而是这条权力传承链条上的一个交接点。</p>
+      </section>
+
+      <section class="block" id="life">
+        <div class="sec-title">
+          <h2>生平脉络</h2>
+          <span>从入仕到权倾朝野</span>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <h3><time>建安年间</time>出仕曹操</h3>
+            <p>司马懿出身河内温县司马氏，早年以才学知名。被曹操征召入仕后，历任文学掾、太子中庶子等职，逐渐进入曹魏核心圈层，并与曹丕建立较深的关系。</p>
+          </div>
+          <div class="tl-item">
+            <h3><time>黄初至太和</time>辅佐曹丕、曹叡</h3>
+            <p>曹丕称帝后，司马懿受到重用。曹叡在位期间，他多次参与重大军事决策，包括对吴作战与抵御蜀汉北伐，逐步积累起军事与政治双重威望。</p>
+          </div>
+          <div class="tl-item">
+            <h3><time>太和至青龙</time>与诸葛亮对峙</h3>
+            <p>在诸葛亮数次北伐中，司马懿是曹魏方面的重要统帅之一。他采取以守为主的策略，避免正面决战，双方在关中、陇右一带长期相持。这段经历也是后世文学与影视着力渲染的部分。</p>
+          </div>
+          <div class="tl-item">
+            <h3><time>景初三年</time>受遗诏辅政</h3>
+            <p>曹叡去世前，遗命司马懿与曹爽共同辅佐幼主曹芳。此后一段时间内，朝政由曹爽集团主导，司马懿一度处于相对退让的状态。</p>
+          </div>
+          <div class="tl-item">
+            <h3><time>嘉平元年</time>发动高平陵之变</h3>
+            <p>司马懿趁曹爽出城之机控制洛阳，随后以谋反罪名清除曹爽及其党羽，自此掌握曹魏实权，成为朝政的实际决策者。</p>
+          </div>
+          <div class="tl-item">
+            <h3><time>嘉平三年</time>平定王凌，同年去世</h3>
+            <p>王凌在淮南起事失败后自杀，司马懿于同年病逝。此后权力由其子司马师、司马昭依次继承，司马氏代魏的路径由此基本铺定。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="relation">
+        <div class="sec-title">
+          <h2>人物关系</h2>
+          <span>理解司马懿之死的关键线索</span>
+        </div>
+        <ul class="rel-list">
+          <li>
+            <b>曹操</b>
+            <span>司马懿的早期主公。曹操对司马懿既有任用也有防范，这段关系常被后世反复解读。</span>
+          </li>
+          <li>
+            <b>曹丕</b>
+            <span>与司马懿关系较近，曹丕称帝后司马懿地位上升，是其政治生涯的重要阶段。</span>
+          </li>
+          <li>
+            <b>曹叡</b>
+            <span>在位时倚重司马懿处理军事事务，临终前安排其与曹爽共同辅政。</span>
+          </li>
+          <li>
+            <b>曹爽</b>
+            <span>同为辅政大臣，与司马懿形成权力竞争，最终在高平陵之变中被清除。</span>
+          </li>
+          <li>
+            <b>诸葛亮</b>
+            <span>北伐中的对手。两人长期对峙，但直接交锋有限，后世文学对其多有演绎。</span>
+          </li>
+          <li>
+            <b>司马师、司马昭</b>
+            <span>司马懿之子，在其去世后相继掌权，继续推进司马氏代魏的进程。</span>
+          </li>
+          <li>
+            <b>王凌</b>
+            <span>淮南重臣，嘉平三年起兵反对司马氏，失败自杀，与司马懿之死同年。</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block" id="view">
+        <div class="sec-title">
+          <h2>后世评说</h2>
+          <span>不同视角下的司马懿</span>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <h3>史家视角</h3>
+            <p>传统史书多肯定其才干与隐忍，同时也对其在高平陵之变中的手段有所评议。司马懿之死因此常被放在“功业”与“权术”两条线索中一并讨论。</p>
+          </div>
+          <div class="card">
+            <h3>文学与影视</h3>
+            <p>《三国演义》及后世影视作品对司马懿的形象有较多艺术加工，其死亡场景往往被戏剧化处理。阅读时宜区分文学演绎与史籍记载。</p>
+          </div>
+          <div class="card">
+            <h3>家族与传承</h3>
+            <p>司马懿之死并未终结司马氏的上升势头，反而成为权力交接的节点。理解这一点，有助于看清三国后期到西晋建立之间的过渡逻辑。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block faq" id="faq">
+        <div class="sec-title">
+          <h2>常见问题</h2>
+          <span>围绕司马懿之死的疑问</span>
+        </div>
+
+        <details open>
+          <summary>司马懿是哪一年去世的？</summary>
+          <div class="ans">按史籍记载，司马懿于曹魏嘉平三年（公元251年）去世，享年七十三岁。这一年同时也是王凌之乱被平定之年。</div>
+        </details>
+
+        <details>
+          <summary>司马懿是怎么死的？</summary>
+          <div class="ans">史书多记为病逝，但未明确说明具体病症。因此“被吓死”“被毒死”等说法缺乏可靠史料支持，更接近后世的推测或文学演绎。</div>
+        </details>
+
+        <details>
+          <summary>司马懿死在哪里？</summary>
+          <div class="ans">史籍对其去世地点的记载并不像时间那样明确，通常将其去世与当时的都城洛阳及周边政局联系起来理解。若需精确地点，应查阅《晋书》等相关记载原文并注意版本差异。</div>
+        </details>
+
+        <details>
+          <summary>司马懿之死和诸葛亮有关系吗？</summary>
+          <div class="ans">诸葛亮去世于公元234年，早于司马懿十七年。两人虽为对手，但司马懿之死与诸葛亮并无直接因果关系，相关联想多来自文学与影视的渲染。</div>
+        </details>
+
+        <details>
+          <summary>司马懿死后，权力由谁继承？</summary>
+          <div class="ans">由其子司马师接掌朝政，司马师之后是司马昭，再之后由司马炎完成代魏建晋。司马懿之死是这一权力传承链条中的重要一环。</div>
+        </details>
+
+        <details>
+          <summary>为什么司马懿之死常被反复讨论？</summary>
+          <div class="ans">一方面因为他去世时正处于权力巅峰，其死亡直接关系到曹魏政局走向；另一方面，《三国演义》和相关影视作品对其形象的艺术加工，也让这一话题持续受到关注。</div>
+        </details>
+      </section>
+
+    </div>
+
+    <aside>
+      <div class="widget">
+        <h3>本页导读</h3>
+        <ul>
+          <li><a href="#death">去世始末与政局背景</a></li>
+          <li><a href="#life">从出仕到权倾朝野</a></li>
+          <li><a href="#relation">关键人物关系梳理</a></li>
+          <li><a href="#view">史家与文学中的形象</a></li>
+          <li><a href="#faq">常见问题解答</a></li>
+        </ul>
+      </div>
+
+      <div class="widget quote-box">
+        <h3>阅读提示</h3>
+        <p>关于三国人物的许多细节，史籍记载本身较为简略，后世又叠加了大量文学演绎。阅读时把“史料记载”和“文学形象”分开看待，往往能得到更清晰的认识。</p>
+        <cite>—— 本页编写说明</cite>
+      </div>
+
+      <div class="widget">
+        <h3>相关概念</h3>
+        <ul>
+          <li>高平陵之变</li>
+          <li>曹魏辅政制度</li>
+          <li>淮南三叛</li>
+          <li>司马氏代魏</li>
+          <li>三国后期政局</li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>关于本页</h4>
+        <p>本页围绕“司马懿之死”整理其去世时间、背景、生平脉络与后世评说，内容以常见史籍记载为基础，对存疑之处保持谨慎表述，不作虚构演绎。</p>
+      </div>
+      <div>
+        <h4>内容板块</h4>
+        <ul>
+          <li><a href="#death">去世始末</a></li>
+          <li><a href="#life">生平脉络</a></li>
+          <li><a href="#relation">人物关系</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读建议</h4>
+        <ul>
+          <li>区分史料与文学演绎</li>
+          <li>注意时间线的先后顺序</li>
+          <li>结合曹魏政局整体理解</li>
+          <li>对存疑说法保持谨慎</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">三国人物志 · 司马懿之死专题 · 内容仅供历史学习参考</p>
+  </div>
+</footer>
+
+</body>
+                          </html>
